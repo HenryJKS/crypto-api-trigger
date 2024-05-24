@@ -1,10 +1,13 @@
 import React from "react";
+import "tailwindcss/tailwind.css";
 
 export default function Layout({ children }) {
-    return (
-        <div>
-        <h1>ETH/USD</h1>
-        {children}
-        </div>
-    );
+  return (
+    <div className="bg-sky-200 min-w-full min-h-screen">
+      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+        Monitoring Price Crypto
+      </h1>
+      {children}
+    </div>
+  );
 }
